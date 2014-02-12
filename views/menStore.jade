@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+	include _nav
+	include _profile
+
+	section(id='main')
+		div(class='top-xellars')
+			h4 Top Xellars | 
+				a(href='#') Show more
+			- for (var i = 0; i < 5; ++i)
+				include _xellarFront
+		div(class='new-arrivals')
+			h4 New Arrivals  | 
+				a(href='#') Show more
+			- for (var i = 0; i < 5; ++i)
+				include _productFront
+		div(class='popular-items')
+			h4 Popular Items | 
+				a(href='#') Show more
+			- for (var i = 0; i < 5; ++i)
+				include _productFront

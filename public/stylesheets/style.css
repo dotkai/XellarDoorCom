@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/** MAIN CSS **/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+	
+nav {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+nav h1, nav ul, nav li, nav a, nav input{
+	display: inline-block;
+}
+nav h1 {
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 10px;
+}
+nav a {
+	height: 100%;
+	padding: 15px;
+	color: #000000;
+	opacity: 0.7;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav a:hover {
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #CCCCCC 0%, #EEEEEE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cccccc 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+nav input[type="search"] {
+	position: absolute;
+	right: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	height: 30px;
+	padding: 3px;
+	font-size: 15px;
+}
+input[type="search"]:focus {
+	outline: none;
+}
+
+
+/*** PROFILE MENU ***/
+section#profile-menu {
+	display: inline-block;
+	vertical-align: top;
+	position:absolute;
+	width: 200px;
+	margin: 25px;
+	padding: 25px;
+	border: 1px solid #F0F0F0;
+	text-align: center;
+	background: ghostwhite;
+	box-shadow: 0px 3px 10px 0px #888;
+	
+	transition: all 0.5s; 
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+section#profile-menu h2{
+	display: block;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	opacity: 0.5;
+}
+section#profile-menu ul> li a{
+	display: block;
+	padding: 10px 5px;
+}
+section#profile-menu ul ul li{
+	display: inline-block;
+	margin: 10px 0;
+}
+section#profile-menu ul ul li button{
+	min-width:40px;
+	margin: 5px;
+	padding: 5px;
+}
+section#profile-menu ul ul li button:hover {
+	cursor: pointer;
+}
+section#profile-menu li a {
+	color: #6699FF;
+	font-weight: 700;
+	text-decoration: none;
+}
+section#profile-menu a.active {
+	color: #003399;
+}
+section#profile-menu a:hover {
+	opacity: 0.5;
+}
+
+/** MENU CONTROLS **/
+a#hide-menu {
+	position: relative;
+	top: -10px;
+	color: #6699FF;
+	font-weight: 700;
+	text-decoration: none;	
+	cursor:pointer;
+}
+a#show-menu {
+	position:absolute;
+	top:75px;
+	right: -33px;
+	color: #6699FF;
+	font-weight: 700;
+	text-decoration: none;
+	cursor:pointer;
+	opacity: 0;
+	
+	transition: all 0.5s; 
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+	
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); /* IE 9 */
+	-webkit-transform:rotate(-90deg); /* Safari and Chrome */
+}
+
+/*** MAIN SECTION ***/
+section#main {
+	display: inline-block;
+	vertical-align: top;
+	position:absolute;
+	left: 300px;
+	margin: 25px;
+	padding: 25px;
+	min-width: 400px;
+
+	transition: all 0.5s; 
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+section#main h4 {
+	margin: 10px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #888888;
+	opacity: 0.8;
+}
+
+/** MY STORE STYLING DISPLAY **/
+section div.storeImg {
+	display: inline-block;
+	vertical-align: top;
+	position:relative;
+	margin: 20px;
+	text-align: center;    
+}
+section div.storeImg h3 {
+	position: absolute;
+	top: 160px;
+	width: 110px;
+	padding: 10px;
+	margin: 0 10px;
+	color: #2E2E2E;
+	font-weight: 700;
+	background: #FDFDFD;
+	border-radius: 10px;
+	opacity: 0.8;
+	
+	transition: top 0.5s, opacity 0.5s; 
+	-webkit-transition: top 0.5s, opacity 0.5s;
+    -moz-transition: top 0.5s, opacity 0.5s;
+    -ms-transition: top 0.5s, opacity 0.5s;
+    -o-transition: top 0.5s, opacity 0.5s;
+}
+section div.storeImg:hover h3 {
+	top:180px;
+	opacity:0;
+}
+section div.storeImg.small h3 {
+	top: 110px;
+}
+section div.storeImg.small:hover h3 {
+	top: 130px;
+	opacity:0;
+}
+section div a.crop {
+	display: block;
+	overflow: hidden;
+	width: 150px;
+	height: 200px;
+}
+section div.small a.crop {
+	width:150px;
+	height:150px;
+}
+
+/*** DIALOG MODS ***/
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+	background: none;
+	border: none;
+	color: #6699FF;
+}
+.ui-dialog-content.ui-widget-content img,
+.ui-dialog-content.ui-widget-content ul{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+	font-weight: 700;
+}
+.ui-dialog-content.ui-widget-content ul{
+	position: relative;
+	margin-left: 20px;
+}
+.ui-dialog-content.ui-widget-content li{
+	padding: 10px 0;
+	opacity: 0.8;
+}
+.ui-dialog-content.ui-widget-content ul li span{
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	left: 45px;
+	width: 110px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.ui-dialog-content.ui-widget-content button {
+	width: 170px;
+	margin: 10px 0;
+}
+button:hover {
+	cursor: pointer;
+}
